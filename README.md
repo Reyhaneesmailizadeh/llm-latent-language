@@ -17,7 +17,7 @@ Set up a python environment and run
 
 `papermill Cloze.ipynb out.ipynb -p target_lang fr`
 ## ******** NEW ADD(Reyhaneh's research)******:
-you can run the cloze.ipynb with the ResearchInternshipRunningClozeTask.ipynb code. For different reasoning dataset, change the path of data in cloze.ipynb : df_en_de = pd.read_csv(f'{prefix}/yourpromptsfile.csv')
+Usage: you can run the cloze.ipynb with the ResearchInternshipRunningClozeTask.ipynb code. For different reasoning dataset, change the path of data in cloze.ipynb : df_en_de = pd.read_csv(f'{prefix}/yourpromptsfile.csv')
 
 This project was used for analysing mathematical french prompts. Other datasets may need modification of cloze.ipynb code.
 
@@ -25,7 +25,7 @@ Results: You can see the results in results image file.
 
 
 Conclusion:
-The LLaMa 2 model processes and understands reasoning French data more slowly than regular non-reasoning French data, resulting in delayed English output. This is not evident if we only consider the French output (blue chart), as there is no noticeable difference between the two diagrams when focusing solely on the blue chart.
+The LLaMa 2 model processes and understands reasoning French data (English output after the layer 25) more slowly than regular non-reasoning French data (English output before the layer 25), resulting in delayed English output. This is not evident if we only consider the French output (blue chart), as there is no noticeable difference between the two diagrams when focusing solely on the blue chart.
 
 # Precomputed latents
 
